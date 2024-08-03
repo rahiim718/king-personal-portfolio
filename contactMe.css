@@ -1,0 +1,186 @@
+.page-body {
+    height: 100%;
+  }
+  
+  .contact-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 20px;
+    width: 100%;
+    width: calc(100% - 1rem);
+  }
+  
+  #profile-photo {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    border-radius: 5px;
+    box-shadow: 10px 10px rgb(58, 56, 53);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 50px;
+    color: rgb(252, 251, 253);
+    font-weight: 500;
+    border-radius: 10px;
+    border: solid;
+    width: calc(100% - 1rem);
+    height: 400px;
+    margin: 50px 25px;
+  }
+  
+  .form-title {
+    background-color: rgb(58, 56, 53);
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    font-size: x-large;
+    border-radius: 5px;
+    max-width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .form-input {
+    font-family: Arial, sans-serif;
+    text-indent: 10px;
+    margin: 0 50px 0 0;
+  }
+  
+  #submit-button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 56, 53);
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    border: none;
+    margin: 20px auto;
+    padding: 10px 20px;
+    display: block;
+  }
+  
+  #page-footer {
+    grid-area: footer;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 13%;
+  }
+  
+  @media screen and (max-width: 1920px) {
+    body {
+      margin: 0;
+      display: block;
+    }
+  
+    main {
+      margin: 0 5%;
+    }
+  
+    h2 {
+      margin-left: 18%;
+    }
+  
+    .about-text {
+      font-size: 17px;
+      max-width: 60%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .contact-section {
+      display: flex;
+      gap: 0;
+      align-content: stretch;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      max-width: 65%;
+    }
+  
+    #profile-photo {
+      width: 50%;
+      height: auto;
+      margin: 30px;
+    }
+  
+    form {
+      max-width: 100%;
+      margin: auto;
+    }
+  
+    .contact-form {
+      margin: 0;
+      width: 100%;
+      padding: 0;
+    }
+  
+    .form-title {
+      background-color: rgb(58, 56, 53);
+      color: rgb(255, 255, 255);
+      padding: 5px 10px;
+      font-size: x-large;
+      border-radius: 5px;
+      width: 80%;
+      height: 75px;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    fieldset {
+      margin: 0;
+    }
+  
+    label {
+      margin-left: 10px;
+    }
+    
+    .form-input {
+      font-family: Arial, sans-serif;
+      text-indent: 10px;
+      margin: 20px;
+    }
+  
+    #submit-button {
+      color: rgb(255, 255, 255);
+      background-color: rgb(58, 56, 53);
+      width: 75px;
+      height: 100px;
+      border-radius: 5px;
+      border: none;
+      margin: 20px;
+      padding-left: 12px;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .about-text {
+      font-size: 17px;
+      max-width: 65%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+  
+    .contact-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: center;
+      width: 80%;
+      margin: auto;
+    }
+  
+    #profile-photo {
+      width: 90%;
+      height: auto;
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+  
+    #page-footer {
+      grid-area: footer;
+      text-align: center;
+      color: #ffffff57;
+      margin-bottom: 3%;
+    }
+  }
