@@ -1,5 +1,5 @@
-Ibrahiim King's Portfolio Website
-Overview
+Ibrahiim King's Portfolio Website Overview
+
 This project showcases my portfolio as a Full Stack Developer, highlighting my 
 technical skills, projects, and professional background. The website provides 
 visitors with a comprehensive view of my work, experiences, and ways to connect
