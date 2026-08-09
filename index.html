@@ -1,56 +1,387 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Ibrahiim King's Portfolio</title>
-  </head>
-  <body>
-    <div class="profile-image">
-      <img class="matrix-image" src="./images/Matrix01.jpg" alt="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ibrahiim King — Software Engineer</title>
+  <meta name="description" content="Ibrahiim King is a software engineer based in Atlanta, GA building full-stack web applications and REST APIs with Java, Spring Boot, and JavaScript." />
+  <meta property="og:title" content="Ibrahiim King — Software Engineer" />
+  <meta property="og:description" content="Full-stack software engineer building reliable web applications and APIs." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="index.html" class="brand">
+        <svg class="brand-mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="37" height="37" rx="10" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M13 10.5v19" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <path d="M20 10.5v19M20 20 L28.5 10.5M20 20 L28.5 29.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+        </svg>
+        Ibrahiim King
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <a href="index.html" class="is-active">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://docs.google.com/document/d/1MXVmu5rX1fFkJ1uFaDFkk3EyDlvHGQ9LKdpeX436u34/edit?usp=sharing" target="_blank" rel="noopener">Resume</a>
+      </nav>
+
+      <div class="nav-right">
+        <button class="theme-toggle" data-theme-toggle aria-label="Switch theme"></button>
+        <button class="nav-toggle" data-nav-toggle aria-label="Open menu" aria-expanded="false"></button>
+      </div>
     </div>
-    <div class="content-wrapper">
-      <header class="header-section">
-        <h1>Ibrahiim King</h1>
-      </header>
-      <main class="main-section">
-        <p>Software Engineer</p>
+  </header>
 
-        <a class="enter-button" href="projects.html">Enter</a>
+  <div class="mobile-menu" data-mobile-menu>
+      <ul>
+        <li><a href="index.html" class="is-active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="https://docs.google.com/document/d/1MXVmu5rX1fFkJ1uFaDFkk3EyDlvHGQ9LKdpeX436u34/edit?usp=sharing" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+      <div class="container mobile-socials">
+        <a class="icon-link" href="https://www.linkedin.com/in/ibrahiim-king-932235127/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001ZM3 9h4v12H3V9Zm7 0h3.8v1.71h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"/></svg>
+        </a>
+        <a class="icon-link" href="https://github.com/rahiim718" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.63-3.37-1.2-3.37-1.2-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.36 1.11 2.94.85.09-.65.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+        <a class="icon-link" href="mailto:ibrahiimking79@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2.4"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
 
-        <div class="social-links">
-          <span class="linkedin-icon icon-container"
-            ><a
-              href="https://www.linkedin.com/in/ibrahiim-king-932235127/"
-              target="_blank"
-            >
-              <img
-                class="icon-image"
-                src="images/icons8-linkedin-30 -white.png"
-                alt="LinkedIn Icon" /></a
-          ></span>
-          <span class="github-icon icon-container"
-            ><a href="https://github.com/rahiim718" target="_blank">
-              <img
-                class="icon-image"
-                src="images/icons8-github-30 -white.png"
-                alt="Github Icon" /></a
-          ></span>
-          <span class="email-icon icon-container"
-            ><a href="mailto:ibrahiimking79@gmail.com">
-              <img
-                class="icon-image"
-                src="images/icons8-email-30 -white.png"
-                alt="Email Icon" /></a
-          ></span>
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <span class="eyebrow">Software Engineer · Atlanta, GA</span>
+          <h1 class="hero-title">Ibrahiim<br /><span class="accent">King</span></h1>
+          <p class="hero-sub">
+            I design and build reliable full-stack applications — from interactive front-ends to
+            Spring Boot &amp; REST APIs — with a focus on clean code and thoughtful user experience.
+          </p>
+          <div class="hero-actions">
+            <a href="projects.html" class="btn btn--primary">View Projects</a>
+            <a href="contact.html" class="btn btn--ghost">Get in Touch</a>
+          </div>
+          <div class="hero-socials">
+            <a class="icon-link" href="https://www.linkedin.com/in/ibrahiim-king-932235127/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001ZM3 9h4v12H3V9Zm7 0h3.8v1.71h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"/></svg>
+            </a>
+            <a class="icon-link" href="https://github.com/rahiim718" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.63-3.37-1.2-3.37-1.2-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.36 1.11 2.94.85.09-.65.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+            </a>
+            <a class="icon-link" href="mailto:ibrahiimking79@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2.4"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
         </div>
-        <a target="_blank" href="https://icons8.com/icon/62856/github" hidden
-          >All icons by</a
-        ><a target="_blank" href="https://icons8.com" hidden>Icons8</a>
-      </main>
-      <footer></footer>
+
+        <div class="profile-card" data-reveal>
+          <div class="profile-card-top">
+            <div class="profile-avatar">
+              <img src="images/ProfilePhoto.jpg" alt="Portrait of Ibrahiim King" />
+            </div>
+            <div>
+              <div class="profile-name">Ibrahiim King</div>
+              <div class="profile-role">// full-stack engineer</div>
+              <div class="profile-status" style="margin-top:.4rem;">Open to opportunities</div>
+            </div>
+          </div>
+          <div class="profile-divider"></div>
+          <div class="profile-stats">
+            <div><div class="profile-stat-num">3+</div><div class="profile-stat-label">Projects shipped</div></div>
+            <div><div class="profile-stat-num">10+</div><div class="profile-stat-label">Technologies</div></div>
+            <div><div class="profile-stat-num">GA</div><div class="profile-stat-label">Based in</div></div>
+          </div>
+          <div class="profile-divider"></div>
+          <div class="profile-tags">
+            <span class="chip">Java</span>
+            <span class="chip">Spring Boot</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">REST APIs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section class="section section--tight" id="about">
+      <div class="container about-grid">
+        <div class="about-visual" data-reveal>
+          <img src="images/ProfilePhoto.jpg" alt="Ibrahiim King" />
+          <div class="about-visual-frame" aria-hidden="true"></div>
+          <div class="about-badge">Brooklyn, NY → South Florida → Atlanta, GA</div>
+        </div>
+
+        <div class="about-body" data-reveal>
+          <span class="eyebrow">About Me</span>
+          <h2 class="section-title">A builder at heart, based in Atlanta</h2>
+          <p>
+            I'm Ibrahiim King, a software engineer originally from Brooklyn, New York. After more than a
+            decade in South Florida, I relocated to Atlanta, Georgia, where I've spent the last several
+            years sharpening my craft as a developer.
+          </p>
+          <p>
+            My goal is straightforward: land a role as a Software Engineer where I can keep learning and
+            solving hard problems. I'm driven by a commitment to doing the work well, a steady curiosity
+            about new technology, and a willingness to take on whatever challenge comes next.
+          </p>
+          <div class="facts-list">
+            <div class="fact">
+              <div class="fact-label">Location</div>
+              <div class="fact-value">Atlanta, GA</div>
+            </div>
+            <div class="fact">
+              <div class="fact-label">Focus</div>
+              <div class="fact-value">Full-Stack Development</div>
+            </div>
+            <div class="fact">
+              <div class="fact-label">Currently</div>
+              <div class="fact-value">Open to SWE roles</div>
+            </div>
+            <div class="fact">
+              <div class="fact-label">Core stack</div>
+              <div class="fact-value">Java · Spring · JS</div>
+            </div>
+          </div>
+          <div class="hero-actions" style="margin-top: var(--space-2);">
+            <a href="https://docs.google.com/document/d/1MXVmu5rX1fFkJ1uFaDFkk3EyDlvHGQ9LKdpeX436u34/edit?usp=sharing" target="_blank" rel="noopener" class="btn btn--ghost btn--sm">
+              Download Resume
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:14px;height:14px;"><path d="M12 3v13m0 0-4-4m4 4 4-4M4 20h16"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section class="section section--tight" id="skills">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow">Technical Skills</span>
+          <h2 class="section-title">Tools I reach for</h2>
+          <p class="section-lede">A working toolkit spanning front-end, back-end, and the practices that tie a product together.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card" data-reveal>
+            <div class="skill-card-head">
+              <span class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 4-6 8 6 8M16 4l6 8-6 8"/></svg>
+              </span>
+              <h3 class="skill-card-title">Languages</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="chip">HTML</span>
+              <span class="chip">CSS</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Java</span>
+              <span class="chip">SQL</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <div class="skill-card-head">
+              <span class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 9h18M9 20V9"/></svg>
+              </span>
+              <h3 class="skill-card-title">Frameworks &amp; Platforms</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="chip">Spring Boot</span>
+              <span class="chip">Spring MVC</span>
+              <span class="chip">Node.js</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">H2 Database</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <div class="skill-card-head">
+              <span class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3.2"/><path d="M19.4 15a1.7 1.7 0 0 0 .34 1.87l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.7 1.7 0 0 0-1.87-.34 1.7 1.7 0 0 0-1 1.55V21a2 2 0 1 1-4 0v-.09A1.7 1.7 0 0 0 9 19.36a1.7 1.7 0 0 0-1.87.34l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.7 1.7 0 0 0 4.64 15a1.7 1.7 0 0 0-1.55-1H3a2 2 0 1 1 0-4h.09A1.7 1.7 0 0 0 4.64 9a1.7 1.7 0 0 0-.34-1.87l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.7 1.7 0 0 0 9 4.64a1.7 1.7 0 0 0 1-1.55V3a2 2 0 1 1 4 0v.09a1.7 1.7 0 0 0 1 1.55 1.7 1.7 0 0 0 1.87-.34l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.7 1.7 0 0 0 19.36 9a1.7 1.7 0 0 0 1.55 1H21a2 2 0 1 1 0 4h-.09a1.7 1.7 0 0 0-1.55 1Z"/></svg>
+              </span>
+              <h3 class="skill-card-title">Tools</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="chip">Git</span>
+              <span class="chip">GitHub</span>
+              <span class="chip">VS Code</span>
+              <span class="chip">Photoshop</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <div class="skill-card-head">
+              <span class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V10M18 20V4M6 20v-6"/></svg>
+              </span>
+              <h3 class="skill-card-title">Design &amp; UI/UX</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="chip">UI/UX Design</span>
+              <span class="chip">CRUD</span>
+              <span class="chip">Responsive Design</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <div class="skill-card-head">
+              <span class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-4 10.5c.5.5.9 1 1 1.5h6c.1-.5.5-1 1-1.5A6 6 0 0 0 12 3Z"/></svg>
+              </span>
+              <h3 class="skill-card-title">Problem-Solving</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="chip">Critical Thinking</span>
+              <span class="chip">Debugging</span>
+              <span class="chip">Data Structures</span>
+            </div>
+          </div>
+
+          <div class="skill-card" data-reveal>
+            <div class="skill-card-head">
+              <span class="skill-card-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+              </span>
+              <h3 class="skill-card-title">Collaboration</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="chip">Team Building</span>
+              <span class="chip">Collaborative Teamwork</span>
+              <span class="chip">Agile</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PROJECTS ===== -->
+    <section class="section section--tight" id="work">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Selected Work</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-lede">A few things I've built while leveling up my full-stack skills.</p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-media">
+              <div class="browser-chrome">
+                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+              </div>
+              <div class="project-media-inner">
+                <img src="images/MBScreenshot.png" alt="Screenshot of The Music Box application" loading="lazy" />
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">The Music Box</h3>
+              <p class="project-desc">
+                A full-stack app where I built user authentication and both the front-end and back-end,
+                sharpening my UI/UX design and project-management skills along the way.
+              </p>
+              <div class="project-tags">
+                <span class="chip">Java</span><span class="chip">Spring MVC</span><span class="chip">REST API</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/rahiim718/the-music-box" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.63-3.37-1.2-3.37-1.2-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.36 1.11 2.94.85.09-.65.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-media">
+              <div class="browser-chrome">
+                <span class="browser-dot"></span><span class="browser-dot"></span><span class="browser-dot"></span>
+              </div>
+              <div class="project-media-inner">
+                <img src="images/VPAPIScreenshot.png" alt="Screenshot of the Virtual Pet API" loading="lazy" />
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Virtual Pet API</h3>
+              <p class="project-desc">
+                A REST API built with Spring Boot — designing entities, repositories, and controllers to
+                handle CRUD operations for managing data in a database.
+              </p>
+              <div class="project-tags">
+                <span class="chip">Java</span><span class="chip">Spring Boot</span><span class="chip">REST API</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="https://github.com/rahiim718/virtualpet-api" target="_blank" rel="noopener">
+                  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.63-3.37-1.2-3.37-1.2-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.36 1.11 2.94.85.09-.65.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+                  View Code
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="display:flex; justify-content:center; margin-top: var(--space-10);">
+          <a href="projects.html" class="btn btn--ghost">See all projects</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-banner" data-reveal>
+          <div class="cta-copy">
+            <h2>Let's build something great</h2>
+            <p>I'm currently open to Software Engineer roles and new collaborations — happy to chat.</p>
+          </div>
+          <div class="cta-actions">
+            <a href="contact.html" class="btn btn--primary">Contact Me</a>
+            <a href="mailto:ibrahiimking79@gmail.com" class="btn btn--ghost">Email Directly</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <a href="index.html" class="footer-brand">
+        <svg viewBox="0 0 40 40" fill="none" aria-hidden="true">
+          <rect x="1.5" y="1.5" width="37" height="37" rx="10" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M13 10.5v19" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+          <path d="M20 10.5v19M20 20 L28.5 10.5M20 20 L28.5 29.5" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity="0.55"/>
+        </svg>
+        Ibrahiim King
+      </a>
+      <div class="footer-links">
+        <a class="icon-link" href="https://www.linkedin.com/in/ibrahiim-king-932235127/" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5.001ZM3 9h4v12H3V9Zm7 0h3.8v1.71h.05c.53-1 1.83-2.06 3.77-2.06 4.03 0 4.78 2.65 4.78 6.1V21h-4v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.96V21h-4V9Z"/></svg>
+        </a>
+        <a class="icon-link" href="https://github.com/rahiim718" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.1.68-.22.68-.49 0-.24-.01-1.05-.01-1.9-2.78.63-3.37-1.2-3.37-1.2-.46-1.19-1.11-1.5-1.11-1.5-.91-.64.07-.63.07-.63 1 .07 1.53 1.05 1.53 1.05.9 1.55 2.36 1.11 2.94.85.09-.65.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.06 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.32.1-2.75 0 0 .84-.27 2.75 1.05a9.3 9.3 0 0 1 5 0c1.9-1.32 2.75-1.05 2.75-1.05.55 1.43.2 2.49.1 2.75.64.72 1.03 1.63 1.03 2.75 0 3.93-2.35 4.8-4.58 5.05.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.6.69.49A10.03 10.03 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+        </a>
+        <a class="icon-link" href="mailto:ibrahiimking79@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2.4"/><path d="m4 7 8 6 8-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <p class="footer-meta">&copy; <span data-year></span> Ibrahiim King. All rights reserved.</p>
     </div>
-  </body>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
 </html>
